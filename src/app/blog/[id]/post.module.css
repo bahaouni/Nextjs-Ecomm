@@ -1,0 +1,33 @@
+.container{}
+
+.title{
+    margin-bottom: 15px;
+}
+.desc{}
+.content{}
+.image {object-fit:cover;
+border-radius: 15px;}
+.imageContainer{
+    position: relative;
+    height: 300px;
+    margin-top: 25px;
+
+}
+.postImage{
+    object-fit: cover;
+    border-radius: 15px;
+}
+.author{
+    position: absolute;
+    background-color: #00508C;
+color: #111;
+padding: 5px 10px;
+bottom: 0;
+right: 0;
+}
+.text{
+    font-size: 18px;
+    line-height: 24px;
+    columns: 2;
+    text-align: justify;
+}

@@ -1,0 +1,36 @@
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    gap:15px ; 
+    padding: 20px;
+}
+.post {
+flex-grow:1;
+border: 1px solid #555;
+border-radius: 15px;
+transition: all .3s ease-in-out;
+}
+.post:hover{
+    background-color: black;
+    border: 1px solid #fff;
+
+}
+.image{
+    object-fit: cover ; 
+    border-radius: 15px;
+    position:relative;
+    height: 200px;
+    width: 100%;
+
+}
+.title{
+    font-weight: 700;
+}
+.text {
+    font-size:18px;
+    color: #999;
+}
+.content{
+    margin: 10px;
+}
