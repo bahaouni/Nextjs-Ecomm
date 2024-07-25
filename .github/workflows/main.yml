@@ -1,0 +1,16 @@
+name : cicd
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Get Current Version
+        id: get_version
+        run: echo "CURRENT_VERSION=$(cat version.txt)" >> $GITHUB_ENV
+   
