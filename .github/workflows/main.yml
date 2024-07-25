@@ -1,4 +1,4 @@
-name : cicd
+name: cicd
 on:
   push:
     branches:
@@ -10,7 +10,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
       - name: Get Current Version
         id: get_version
-        run: echo "CURRENT_VERSION=$(cat version.txt)" >> $GITHUB_ENV
-   
+        run: |
+          echo "CURRENT_VERSION=$(cat version.txt)" >> $GITHUB_ENV
+          cat $GITHUB_ENV
